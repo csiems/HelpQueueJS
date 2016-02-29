@@ -1,1 +1,15 @@
-<p>Thanks {{model.author}}. Help is on the way</p>
+<div class="row">
+  {{#if model.isOpen}}
+  <div class="col-md-6 thank-you-message">
+    <p>Thanks {{model.author}}.</p>
+    <p>Help is on the way!</p>
+    <div class="col-md-6 text-center">
+      {{close-ticket ticket=model closeTicket="closeTicket"}}
+    </div>
+  </div>
+  {{else}}
+  <div class="col-md-6 thank-you-message">
+    <p>Your ticket has been closed.</p>
+  </div>
+  {{/if}}
+</div>

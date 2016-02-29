@@ -20,7 +20,7 @@ body {
     border-width: 0 0 1px;
   }
 
-  .navbar-fixed-top{
+  .navbar-fixed-top {
     position: fixed;
     right: 0;
     left: 0;
@@ -48,6 +48,11 @@ body {
 
   .pull-right {
     float: right !important;
+  }
+
+  .thank-you-message {
+    font-size: 1.3em;
+    text-align: center;
   }
 
 }
