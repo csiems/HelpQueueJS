@@ -1,0 +1,11 @@
+<div class="ticket-details">
+  <h3>{{ticket.author}}</h3>
+  <h4>{{ticket.location}}</h4>
+  <div class="ticket-description">
+    <p>
+      {{ticket.description}}
+    </p>
+  </div>
+  {{#link-to 'queue'}}Back{{/link-to}}
+  <button {{action 'closeTicket' ticket}}>close</button>
+</div>

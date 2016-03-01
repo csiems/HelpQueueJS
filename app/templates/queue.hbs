@@ -1,0 +1,7 @@
+<div class="col-md-12">
+  {{#each model as |ticket|}}
+    {{#if ticket.isOpen}}
+      {{queue-tile ticket=ticket}}
+    {{/if}}
+  {{/each}}
+</div>
